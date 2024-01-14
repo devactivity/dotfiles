@@ -2,17 +2,16 @@
 
 ## Neovim setup for Rust
 
-Konfigurasi ini menggunakan `Packer` sebagai _plugins manager_. Silahkan kunjungi halaman [dokumentasi Packer](https://github.com/wbthomason/packer.nvim) untuk petunjuk lebih lanjut dan cara installasinya.
+Konfigurasi ini menggunakan `Lazy.nvim` sebagai _plugins manager_. Silahkan kunjungi halaman [dokumentasi Lazy.nvim](https://github.com/folke/lazy.nvim) untuk informasi dan cara kerjanya.
 
 Sebagai tambahan, silahkan install beberapa `package` pendukung berikut ini di sistem OS Anda: `git, fzf, and ripgrep`. Perlu diingat bahwa nama `package` tersebut mungkin berbeda dibeberapa Distro Linux, jadi pastikan nama `package` tersebut sesuai dengan Distro Linux yang Anda gunakan.
 
-Untuk _intellisense engine_ yang digunakan dalam konkfigurasi ini adalah [lua_lsp](https://github.com/sumneko/lua-language-server). Detail lebih lanjut dapat Anda lihat melalui link tersebut. Dan untuk daftar `plugins` yang digunakan dalam konfigurasi ini dapat dilihat melalui [file ini](https://github.com/devactivity/dotfiles/blob/master/neovim/lua/packer-config/init.lua).
+Untuk _language server_ yang digunakan dalam konkfigurasi ini adalah [neovim-lspconfig](https://github.com/neovim/nvim-lspconfig). Detail lebih lanjut dapat Anda lihat melalui link tersebut.
 
-Perintah install plugin:
+Gunakan perintah dibawah untuk informasi terkait _plugins_:
 
-- :PackerInstall - installs all plugins
-- :PackerClean - removal unused plugins
-- :Mason - install LSP stuff
+- :checkhealth lazy - recommended to run after installation
+- :Lazy - to manage Plugins
 
 Dasar mappings:
 
