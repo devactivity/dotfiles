@@ -31,6 +31,7 @@ return {
         ["<C-b>"] = cmp.mapping.scroll_docs(-4),
         ["<C-f>"] = cmp.mapping.scroll_docs(4),
         ["<C-Space>"] = cmp.mapping.complete({}),
+        ["<C-y>"] = cmp.mapping.confirm({ select = true }),
         ["<CR>"] = cmp.mapping.confirm({
           behavior = cmp.ConfirmBehavior.Replace,
           select = true,
@@ -62,6 +63,7 @@ return {
       -- },
       sources = {
         { name = "nvim_lsp" },
+        { name = "nvim_lua" },
         { name = "luasnip" },
         { name = "buffer" },
         { name = "path" },
@@ -77,6 +79,7 @@ return {
             -- Source
             vim_item.menu = ({
               nvim_lsp = "[LSP]",
+              nvim_lua = "[Lua]",
               luasnip = "[LuaSnip]",
               buffer = "[Buffer]",
             })[entry.source.name]

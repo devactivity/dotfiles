@@ -57,3 +57,17 @@ set.ffs = "unix,dos" -- Use Unix as the standard file type
 set.magic = true -- For regular expressions turn magic on
 set.linespace = 15
 set.conceallevel = 2
+
+vim.filetype.add({
+  extension = {
+    env = "dotenv",
+  },
+  filename = {
+    [".env"] = "dotenv",
+    ["env"] = "dotenv",
+  },
+  pattern = {
+    -- ["[jt]sconfig.*.json"] = "jsonc",
+    ["%.env%.[%w_.-]+"] = "dotenv",
+  },
+})

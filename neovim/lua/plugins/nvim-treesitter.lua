@@ -6,8 +6,8 @@ return {
     event = { "BufReadPost", "BufNewFile" },
     dependencies = {
       "nvim-treesitter/nvim-treesitter-textobjects",
-      "nvim-treesitter/nvim-treesitter-refactor",
-      "nvim-treesitter/playground",
+      -- "nvim-treesitter/nvim-treesitter-refactor",
+      -- "nvim-treesitter/playground",
     },
     config = function()
       require("nvim-treesitter.configs").setup({
@@ -94,16 +94,16 @@ return {
           },
         },
         --> refactor module
-        refactor = {
-          smart_rename = {
-            enable = true,
-            keymaps = {
-              smart_rename = "grr",
-            },
-          },
-        },
+        -- refactor = {
+        --   smart_rename = {
+        --     enable = true,
+        --     keymaps = {
+        --       smart_rename = "grr",
+        --     },
+        --   },
+        -- },
         --> treesitter playground <--
-        playground = {
+        -- playground = {
           enable = true,
           disable = {},
           updatetime = 25, -- Debounced time for highlighting nodes in the playground from source code
@@ -120,7 +120,7 @@ return {
             goto_node = "<cr>",
             show_help = "?",
           },
-        },
+        -- },
       })
     end,
   },

@@ -51,6 +51,18 @@ api.nvim_create_autocmd("FileType", {
   end,
 })
 
+-- Highlight on yank
+api.nvim_create_autocmd("TextYankPost", {
+  callback = function()
+    vim.highlight.on_yank()
+  end,
+})
+
+-- auto close brackets
+-- this
+-- api.nvim_create_autocmd("FileType", { pattern = "man", command = [[nnoremap <buffer><silent> q :quit<CR>]] })
+
+
 -- resize neovim split when terminal is resized
 api.nvim_command("autocmd VimResized * wincmd =")
 
