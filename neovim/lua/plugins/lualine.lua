@@ -9,7 +9,7 @@ return {
   config = function()
     require("lualine").setup({
       options = {
-        theme = "itabyss"
+        theme = "everforest"
       }
     })
   end
