@@ -54,3 +54,6 @@ map("n", "<leader>fg", ":Telescope live_grep<cr>", opts)
 map("n", "<leader>fb", ":Telescope buffers<cr>", opts)
 map("n", "<C-s>", ":Telescope current_buffer_fuzzy_find<CR>", opts)  -- search current buffer
 map("n", "<Leader>m", ":Telescope git_status<CR>", opts)  -- search modified files
+
+
+map("n", "<leader>cf", "zc<cr>", opts)
