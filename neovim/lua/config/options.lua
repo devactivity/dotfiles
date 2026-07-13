@@ -83,7 +83,7 @@ set.conceallevel = 2
 
 -- Enable code folding
 set.foldmethod = "expr"
-set.foldexpr = "nvim_treesitter#foldexpr()"
+set.foldexpr = "v:lua.vim.treesitter.foldexpr()"
 set.foldlevel = 20
 
 vim.filetype.add({
